@@ -1,0 +1,543 @@
+{
+  "screens": [
+    {
+      "id": "root",
+      "name": "root",
+      "screen_id": "root",
+      "style": "root_screen_style",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "uber_card"
+              },
+              {
+                "section_id": "payment_methods_display_uber"
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              {
+                "section_id": "nav_bar_mobile"
+              },
+            ]
+          },
+          "floating_footer": {
+            "section_details": [
+              
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "sections" : [
+    {
+      "id": "nav_bar_mobile",
+      "section_id": "nav_bar_mobile",
+      "type": "general_list_content",
+      "section": {
+        "items": [
+          {
+            "id": "nav_bar",
+            "type": "nav_bar",
+            "style": "nav_bar_style",
+            "title": "",
+            "image": {
+              "type": "local_image",
+              "value": "dark_gray_close"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "uber_card",
+      "section_id": "uber_card",
+      "type": "general_list_content",
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "wallet_header",
+            "type": "label",
+            "style": "wallet_header",
+            "title": "Wallet"
+          },
+          {
+            "id": "card_container",
+            "type": "card_container",
+            "style": "card_primary",
+            "item": {
+              "id": "v_group_card",
+              "type": "v_group",
+              "style": "v_group_card",
+              "items": [
+                {
+                  "id": "uber_cash_title",
+                  "type": "label",
+                  "style": "uber_cash_title",
+                  "title": "Uber Cash"
+                },
+                {
+                  "id": "cash_hgroup",
+                  "type": "h_group",
+                  "style": "h_group_secondary",
+                  "items": [
+                    {
+                      "id": "money_title",
+                      "type": "label",
+                      "style": "money_title",
+                      "title": "$68.00"
+                    },
+                    {
+                      "id": "image",
+                      "type": "image",
+                      "style": "image_small",
+                      "image": {
+                        "type": "local_image",
+                        "value": "disclosure_indicator_dark"
+                      }
+                    }
+                  ],
+                },
+                {
+                  "id": "auto_refill",
+                  "type": "label",
+                  "style": "auto_refill_title",
+                  "title": "Auto-refill is off"
+                },
+                {
+                  "id": "add_funds_button",
+                  "type": "button",
+                  "style": "add_funds_button",
+                  "title": "Add funds",
+                  "image": {
+                    "type": "local_image",
+                    "value": "add_white"
+                  }
+                },
+              ]
+            }
+          },
+        ]
+      },
+    },
+    {
+      "id": "payment_methods_display_uber",
+      "section_id": "payment_methods_display_uber",
+      "type": "general_list_content",
+      "section": {
+        "items": [
+          {
+            "id": "label_title",
+            "type": "label",
+            "style": "section_header_text",
+            "title": "Payment Methods"
+          },
+          {
+            "id": "applepay",
+            "type": "h_group",
+            "style": "h_group_payment_method_item",
+            "items": [
+              {
+                "id": "image_3",
+                "type": "image",
+                "style": "payment_method_image",
+                "image": {
+                  "type": "local_image",
+                  "value": "apple_pay_icon"
+                }
+              },
+              {
+                "id": "item_11",
+                "type": "basic_list_item",
+                "style": "payment_method_item_text",
+                "title": "Apple Pay",
+                "on_press_action": {
+                  "type": "push_view",
+                  "route": {
+                    "screen_id": "push_view_id"
+                  }
+                }
+              },
+              {
+                "id": "image_4",
+                "type": "image",
+                "style": "image_extra_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "disclosure_indicator_dark"
+                }
+              },
+            ],
+            "on_press_action": {
+              "type": "present_view",
+              "style": "wrap_content",
+              "route": {
+                "file_name": "treasure_view"
+              }
+            }
+          },
+          {
+            "id": "divider_0",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "card_1",
+            "type": "h_group",
+            "style": "h_group_payment_method_item",
+            "items": [
+              {
+                "id": "image_3",
+                "type": "image",
+                "style": "payment_method_image",
+                "image": {
+                  "type": "local_image",
+                  "value": "payment_mastercard"
+                }
+              },
+              {
+                "id": "item_11",
+                "type": "basic_list_item",
+                "style": "payment_method_item_text",
+                "title": "•••• 9023",
+                "on_press_action": {
+                  "type": "push_view",
+                  "route": {
+                    "screen_id": "push_view_id"
+                  }
+                }
+              },
+              {
+                "id": "image_4",
+                "type": "image",
+                "style": "image_extra_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "disclosure_indicator_dark"
+                }
+              },
+            ],
+            "on_press_action": {
+              "type": "present_view",
+              "route": {
+                "file_name": "treasure_view"
+              }
+            }
+          },
+          {
+            "id": "divider_1",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "card_2",
+            "type": "h_group",
+            "style": "h_group_payment_method_item",
+            "items": [
+              {
+                "id": "image_3",
+                "type": "image",
+                "style": "payment_method_image",
+                "image": {
+                  "type": "local_image",
+                  "value": "ic_rider_payment_paypal"
+                }
+              },
+              {
+                "id": "item_11",
+                "type": "basic_list_item",
+                "style": "payment_method_item_text",
+                "title": "Paypal",
+                "subtitle": "marvin.zhan@gmail.com",
+                "on_press_action": {
+                  "type": "push_view",
+                  "route": {
+                    "screen_id": "push_view_id"
+                  }
+                }
+              },
+              {
+                "id": "image_4",
+                "type": "image",
+                "style": "image_extra_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "disclosure_indicator_dark"
+                }
+              },
+            ],
+            "on_press_action": {
+              "type": "present_view",
+              "route": {
+                "file_name": "treasure_view"
+              }
+            }
+          },
+          {
+            "id": "divider_4",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "add_card",
+            "type": "basic_list_item",
+            "style": "list_secondary_add_card",
+            "title": "Add Payment Method or Redeem Gift Card",
+            "image": {
+              "type": "local_image",
+              "value": "add_black"
+            }
+          }
+        ],
+      },
+    },
+  ],
+  "styles": [
+    {
+      "type": "screen",
+      "id": "root_screen_style",
+      "basic_props": {
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "type": "nav_bar_style",
+      "id": "nav_bar_style",
+      "bottom_line_height": 1,
+      "bottom_line_visibility": "visible_by_offset",
+      "bottom_line_color": "#DDDDDD",
+      "title_style_id": "primary_text",
+      "image_style_id": "image_nav_bar",
+      "height": 60,
+      "basic_props": {
+        "layout_margins": [
+          0,
+          20,
+          12,
+          12
+        ],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "type": "label",
+      "id": "primary_text",
+      "alignment": "center",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "font": {
+        "name": "Poppins-Medium",
+        "size": 18
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_nav_bar",
+      "height": 20,
+      "width": 20
+    },
+    {
+      "id": "card_primary",
+      "type": "card_container",
+      "corner_radius": 20,
+      "basic_props": {
+        "background_color": "#ffffff",
+        "layout_margins": [8,20,0,20]
+      }
+    },
+    {
+      "id": "v_group_card",
+      "type": "group",
+      "v_group_align": "fill",
+      "spacing": 4,
+      "basic_props": {
+        "layout_margins": [0, 24, 0, 0],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "type": "label",
+      "id": "uber_cash_title",
+      "basic_props": {
+        "layout_margins": [24,24,0,0]
+      },
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 16
+      }
+    },
+    {
+      "type": "label",
+      "id": "money_title",
+      "layout_margins": [4,24,0,0],
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "font": {
+        "name": "Poppins-Medium",
+        "size": 34
+      }
+    },
+    {
+      "type": "label",
+      "id": "wallet_header",
+      "basic_props": {
+        "layout_margins": [4,24,12,24],
+      },
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 34
+      }
+    },
+    {
+      "type": "label",
+      "id": "auto_refill_title",
+      "layout_margins": [0,24,0,0],
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "font": {
+        "name": "Avenir-Book",
+        "size": 14
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_small",
+      "height": 24,
+      "width": 16,
+      "layout_margins": [0, 0, 0, 24]
+    },
+    {
+      "id": "h_group_secondary",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 8,
+      "layout_margins": [8, 24, 8, 0],
+      "background_color": "#ffffff"
+    },
+    {
+      "id": "add_funds_button",
+      "type": "button",
+      "text_color": "#ffffff",
+      "text_font": {
+        "name": "Avenir-Medium",
+        "size": 16
+      },
+      "background_color": "#000000",
+      "layout_margins": [16, 20, 24, 0],
+      "button_height": 50,
+      "corner_radius": 24
+    },
+    {
+      "type": "label",
+      "id": "section_header_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "layout_margins": [32, 24, 12, 12],
+      "font": {
+        "name": "Avenir-Medium",
+        "size": 20
+      }
+    },
+    {
+      "id": "h_group_payment_method_item",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 0,
+      "layout_margins": [8, 24, 8, 0],
+      "background_color": "#ffffff"
+    },
+    {
+      "type": "image",
+      "id": "payment_method_image",
+      "height": 40,
+      "width": 40,
+      "layout_margins": [0, 0, 0, 16]
+    },
+    {
+      "id": "payment_method_item_text",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "title_and_subtitle_style_id": "title_subtitle_list_item",
+      "background_color": "#ffffff",
+    },
+    {
+      "id": "title_subtitle_list_item",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "v_space": 0,
+      "title_style_id": "list_item_title",
+      "subtitle_style_id": "secondary_text",
+    },
+    {
+      "type": "label",
+      "id": "list_item_title",
+      "alignment": "leading",
+      "number_of_lines": 0,
+      "text_color": "#000000",
+      "font": {
+        "name": "Avenir-Medium",
+        "size": 17
+      }
+    },
+    {
+      "type": "label",
+      "id": "secondary_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#878883",
+      "font": {
+        "name": "Avenir",
+        "size": 16
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_extra_small",
+      "height": 16,
+      "width": 8,
+      "layout_margins": [0, 0, 0, 16]
+    },
+    {
+      "id": "horizontal_divider",
+      "type": "divider",
+      "height": 1,
+      "color": "#DDDDDD",
+      "layout_margins": [6, 79, 6, 0]
+    },
+    {
+      "id": "list_secondary_add_card",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "h_space": 0,
+      "title_and_subtitle_style_id": "title_subtitle_list_item",
+      "background_color": "#ffffff",
+      "image_style_id": "add_image",
+      "layout_margins": [16, 24, 0, 16]
+    },
+    {
+      "type": "image",
+      "id": "add_image",
+      "height": 24,
+      "width": 24,
+      "layout_margins": [0, 8, 0, 24]
+    },
+  ]
+}

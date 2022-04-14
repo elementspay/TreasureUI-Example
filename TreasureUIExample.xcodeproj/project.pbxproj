@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031C640D3E15F246C6F26E71 /* Pods_TreasureUIExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB9D1ACAC7678F4640478210 /* Pods_TreasureUIExampleTests.framework */; };
+		29ED025A7290D0EAC10755B5 /* Pods_TreasureUIExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F8FC17C1C8BF0E22B9F30B /* Pods_TreasureUIExample.framework */; };
+		8729D34628089CA700406CBB /* FileResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8729D34528089CA700406CBB /* FileResources.swift */; };
+		875242452804DCF800074402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242442804DCF800074402 /* AppDelegate.swift */; };
+		875242512804DCFA00074402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8752424F2804DCFA00074402 /* LaunchScreen.storyboard */; };
+		8752425C2804DCFA00074402 /* TreasureUIExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8752425B2804DCFA00074402 /* TreasureUIExampleTests.swift */; };
+		875242662804DCFA00074402 /* TreasureUIExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242652804DCFA00074402 /* TreasureUIExampleUITests.swift */; };
+		875242682804DCFA00074402 /* TreasureUIExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242672804DCFA00074402 /* TreasureUIExampleUITestsLaunchTests.swift */; };
+		8752427F2804DE2600074402 /* lime_payment_methods_view.json in Resources */ = {isa = PBXBuildFile; fileRef = 875242752804DE2600074402 /* lime_payment_methods_view.json */; };
+		875242802804DE2600074402 /* treasure_view_test_1.json in Resources */ = {isa = PBXBuildFile; fileRef = 875242762804DE2600074402 /* treasure_view_test_1.json */; };
+		875242812804DE2600074402 /* blueprint.json in Resources */ = {isa = PBXBuildFile; fileRef = 875242772804DE2600074402 /* blueprint.json */; };
+		875242822804DE2600074402 /* simple_test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 875242782804DE2600074402 /* simple_test.xml */; };
+		875242832804DE2600074402 /* design_system.json in Resources */ = {isa = PBXBuildFile; fileRef = 875242792804DE2600074402 /* design_system.json */; };
+		875242842804DE2600074402 /* uber_payments.json in Resources */ = {isa = PBXBuildFile; fileRef = 8752427A2804DE2600074402 /* uber_payments.json */; };
+		875242852804DE2600074402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8752427B2804DE2600074402 /* Assets.xcassets */; };
+		875242862804DE2600074402 /* treasure_view.json in Resources */ = {isa = PBXBuildFile; fileRef = 8752427C2804DE2600074402 /* treasure_view.json */; };
+		875242872804DE2600074402 /* blocks_ui.json in Resources */ = {isa = PBXBuildFile; fileRef = 8752427D2804DE2600074402 /* blocks_ui.json */; };
+		875242882804DE2600074402 /* uber_payments_variant.json in Resources */ = {isa = PBXBuildFile; fileRef = 8752427E2804DE2600074402 /* uber_payments_variant.json */; };
+		875242962804DE5900074402 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8752428A2804DE5900074402 /* OpenSans-Semibold.ttf */; };
+		875242972804DE5900074402 /* Poppins-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8752428B2804DE5900074402 /* Poppins-Medium.otf */; };
+		875242982804DE5900074402 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8752428C2804DE5900074402 /* OpenSans-Light.ttf */; };
+		875242992804DE5900074402 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8752428D2804DE5900074402 /* OpenSans-ExtraBold.ttf */; };
+		8752429A2804DE5900074402 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8752428E2804DE5900074402 /* OpenSans-Bold.ttf */; };
+		8752429B2804DE5900074402 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8752428F2804DE5900074402 /* OpenSans-Regular.ttf */; };
+		8752429C2804DE5900074402 /* FontPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242912804DE5900074402 /* FontPlate.swift */; };
+		8752429D2804DE5900074402 /* ColorPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242922804DE5900074402 /* ColorPlate.swift */; };
+		8752429E2804DE5900074402 /* StylesPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242932804DE5900074402 /* StylesPlate.swift */; };
+		8752429F2804DE5900074402 /* LocalImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242942804DE5900074402 /* LocalImages.swift */; };
+		875242A02804DE5900074402 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875242952804DE5900074402 /* Theme.swift */; };
+		878CD6D82807727D00296052 /* DefaultTreasureImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CD6D62807727D00296052 /* DefaultTreasureImageLoader.swift */; };
+		878CD6D92807727D00296052 /* PaymentFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878CD6D72807727D00296052 /* PaymentFlowViewController.swift */; };
+		C5A884C4DDCF911597160B33 /* Pods_TreasureUIExample_TreasureUIExampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CF5AD8FD3C9AF5D6C539B4 /* Pods_TreasureUIExample_TreasureUIExampleUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		875242582804DCFA00074402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 875242392804DCF800074402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 875242402804DCF800074402;
+			remoteInfo = TreasureUIExample;
+		};
+		875242622804DCFA00074402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 875242392804DCF800074402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 875242402804DCF800074402;
+			remoteInfo = TreasureUIExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		158531C3E1DB98728A3FD91A /* Pods-TreasureUIExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureUIExample.debug.xcconfig"; path = "Target Support Files/Pods-TreasureUIExample/Pods-TreasureUIExample.debug.xcconfig"; sourceTree = "<group>"; };
+		30939A1EC36F6B6A3BD9BF88 /* Pods-TreasureUIExample-TreasureUIExampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureUIExample-TreasureUIExampleUITests.release.xcconfig"; path = "Target Support Files/Pods-TreasureUIExample-TreasureUIExampleUITests/Pods-TreasureUIExample-TreasureUIExampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D0B9A76028CFC9816BE5D22 /* Pods-TreasureUIExample-TreasureUIExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureUIExample-TreasureUIExampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-TreasureUIExample-TreasureUIExampleUITests/Pods-TreasureUIExample-TreasureUIExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		833B4E5A9950A5BC5B077C37 /* Pods-TreasureUIExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureUIExampleTests.release.xcconfig"; path = "Target Support Files/Pods-TreasureUIExampleTests/Pods-TreasureUIExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		8729D34528089CA700406CBB /* FileResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileResources.swift; sourceTree = "<group>"; };
+		875242412804DCF800074402 /* TreasureUIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TreasureUIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		875242442804DCF800074402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		875242502804DCFA00074402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		875242522804DCFA00074402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		875242572804DCFA00074402 /* TreasureUIExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureUIExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8752425B2804DCFA00074402 /* TreasureUIExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureUIExampleTests.swift; sourceTree = "<group>"; };
+		875242612804DCFA00074402 /* TreasureUIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreasureUIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		875242652804DCFA00074402 /* TreasureUIExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureUIExampleUITests.swift; sourceTree = "<group>"; };
+		875242672804DCFA00074402 /* TreasureUIExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureUIExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		875242752804DE2600074402 /* lime_payment_methods_view.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lime_payment_methods_view.json; sourceTree = "<group>"; };
+		875242762804DE2600074402 /* treasure_view_test_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = treasure_view_test_1.json; sourceTree = "<group>"; };
+		875242772804DE2600074402 /* blueprint.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blueprint.json; sourceTree = "<group>"; };
+		875242782804DE2600074402 /* simple_test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = simple_test.xml; sourceTree = "<group>"; };
+		875242792804DE2600074402 /* design_system.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = design_system.json; sourceTree = "<group>"; };
+		8752427A2804DE2600074402 /* uber_payments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uber_payments.json; sourceTree = "<group>"; };
+		8752427B2804DE2600074402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8752427C2804DE2600074402 /* treasure_view.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = treasure_view.json; sourceTree = "<group>"; };
+		8752427D2804DE2600074402 /* blocks_ui.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = blocks_ui.json; sourceTree = "<group>"; };
+		8752427E2804DE2600074402 /* uber_payments_variant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = uber_payments_variant.json; sourceTree = "<group>"; };
+		8752428A2804DE5900074402 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		8752428B2804DE5900074402 /* Poppins-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.otf"; sourceTree = "<group>"; };
+		8752428C2804DE5900074402 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		8752428D2804DE5900074402 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		8752428E2804DE5900074402 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		8752428F2804DE5900074402 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		875242912804DE5900074402 /* FontPlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontPlate.swift; sourceTree = "<group>"; };
+		875242922804DE5900074402 /* ColorPlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPlate.swift; sourceTree = "<group>"; };
+		875242932804DE5900074402 /* StylesPlate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StylesPlate.swift; sourceTree = "<group>"; };
+		875242942804DE5900074402 /* LocalImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalImages.swift; sourceTree = "<group>"; };
+		875242952804DE5900074402 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		878CD6D62807727D00296052 /* DefaultTreasureImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultTreasureImageLoader.swift; sourceTree = "<group>"; };
+		878CD6D72807727D00296052 /* PaymentFlowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentFlowViewController.swift; sourceTree = "<group>"; };
+		91B5C5A9E61644A5B892990D /* Pods-TreasureUIExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureUIExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-TreasureUIExampleTests/Pods-TreasureUIExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC53BF0241EFCE1E2A9E0582 /* Pods-TreasureUIExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TreasureUIExample.release.xcconfig"; path = "Target Support Files/Pods-TreasureUIExample/Pods-TreasureUIExample.release.xcconfig"; sourceTree = "<group>"; };
+		B1F8FC17C1C8BF0E22B9F30B /* Pods_TreasureUIExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureUIExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CF5AD8FD3C9AF5D6C539B4 /* Pods_TreasureUIExample_TreasureUIExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureUIExample_TreasureUIExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB9D1ACAC7678F4640478210 /* Pods_TreasureUIExampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TreasureUIExampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8752423E2804DCF800074402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29ED025A7290D0EAC10755B5 /* Pods_TreasureUIExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875242542804DCFA00074402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				031C640D3E15F246C6F26E71 /* Pods_TreasureUIExampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8752425E2804DCFA00074402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5A884C4DDCF911597160B33 /* Pods_TreasureUIExample_TreasureUIExampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		875242382804DCF800074402 = {
+			isa = PBXGroup;
+			children = (
+				875242432804DCF800074402 /* TreasureUIExample */,
+				8752425A2804DCFA00074402 /* TreasureUIExampleTests */,
+				875242642804DCFA00074402 /* TreasureUIExampleUITests */,
+				875242422804DCF800074402 /* Products */,
+				CBF56DDBC6086573A618F78E /* Pods */,
+				8F1365B5ADF825495EC6915E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		875242422804DCF800074402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				875242412804DCF800074402 /* TreasureUIExample.app */,
+				875242572804DCFA00074402 /* TreasureUIExampleTests.xctest */,
+				875242612804DCFA00074402 /* TreasureUIExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		875242432804DCF800074402 /* TreasureUIExample */ = {
+			isa = PBXGroup;
+			children = (
+				875242892804DE5900074402 /* Fonts */,
+				875242902804DE5900074402 /* Theme */,
+				875242742804DE2500074402 /* Resources */,
+				875242442804DCF800074402 /* AppDelegate.swift */,
+				8729D34528089CA700406CBB /* FileResources.swift */,
+				878CD6D62807727D00296052 /* DefaultTreasureImageLoader.swift */,
+				878CD6D72807727D00296052 /* PaymentFlowViewController.swift */,
+				8752424F2804DCFA00074402 /* LaunchScreen.storyboard */,
+				875242522804DCFA00074402 /* Info.plist */,
+			);
+			path = TreasureUIExample;
+			sourceTree = "<group>";
+		};
+		8752425A2804DCFA00074402 /* TreasureUIExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8752425B2804DCFA00074402 /* TreasureUIExampleTests.swift */,
+			);
+			path = TreasureUIExampleTests;
+			sourceTree = "<group>";
+		};
+		875242642804DCFA00074402 /* TreasureUIExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				875242652804DCFA00074402 /* TreasureUIExampleUITests.swift */,
+				875242672804DCFA00074402 /* TreasureUIExampleUITestsLaunchTests.swift */,
+			);
+			path = TreasureUIExampleUITests;
+			sourceTree = "<group>";
+		};
+		875242742804DE2500074402 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				875242752804DE2600074402 /* lime_payment_methods_view.json */,
+				875242762804DE2600074402 /* treasure_view_test_1.json */,
+				875242772804DE2600074402 /* blueprint.json */,
+				875242782804DE2600074402 /* simple_test.xml */,
+				875242792804DE2600074402 /* design_system.json */,
+				8752427A2804DE2600074402 /* uber_payments.json */,
+				8752427B2804DE2600074402 /* Assets.xcassets */,
+				8752427C2804DE2600074402 /* treasure_view.json */,
+				8752427D2804DE2600074402 /* blocks_ui.json */,
+				8752427E2804DE2600074402 /* uber_payments_variant.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		875242892804DE5900074402 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8752428A2804DE5900074402 /* OpenSans-Semibold.ttf */,
+				8752428B2804DE5900074402 /* Poppins-Medium.otf */,
+				8752428C2804DE5900074402 /* OpenSans-Light.ttf */,
+				8752428D2804DE5900074402 /* OpenSans-ExtraBold.ttf */,
+				8752428E2804DE5900074402 /* OpenSans-Bold.ttf */,
+				8752428F2804DE5900074402 /* OpenSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		875242902804DE5900074402 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				875242912804DE5900074402 /* FontPlate.swift */,
+				875242922804DE5900074402 /* ColorPlate.swift */,
+				875242932804DE5900074402 /* StylesPlate.swift */,
+				875242942804DE5900074402 /* LocalImages.swift */,
+				875242952804DE5900074402 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		8F1365B5ADF825495EC6915E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1F8FC17C1C8BF0E22B9F30B /* Pods_TreasureUIExample.framework */,
+				E5CF5AD8FD3C9AF5D6C539B4 /* Pods_TreasureUIExample_TreasureUIExampleUITests.framework */,
+				FB9D1ACAC7678F4640478210 /* Pods_TreasureUIExampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBF56DDBC6086573A618F78E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				158531C3E1DB98728A3FD91A /* Pods-TreasureUIExample.debug.xcconfig */,
+				AC53BF0241EFCE1E2A9E0582 /* Pods-TreasureUIExample.release.xcconfig */,
+				5D0B9A76028CFC9816BE5D22 /* Pods-TreasureUIExample-TreasureUIExampleUITests.debug.xcconfig */,
+				30939A1EC36F6B6A3BD9BF88 /* Pods-TreasureUIExample-TreasureUIExampleUITests.release.xcconfig */,
+				91B5C5A9E61644A5B892990D /* Pods-TreasureUIExampleTests.debug.xcconfig */,
+				833B4E5A9950A5BC5B077C37 /* Pods-TreasureUIExampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		875242402804DCF800074402 /* TreasureUIExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8752426B2804DCFA00074402 /* Build configuration list for PBXNativeTarget "TreasureUIExample" */;
+			buildPhases = (
+				BDFF09C13770083E587B4836 /* [CP] Check Pods Manifest.lock */,
+				8752423D2804DCF800074402 /* Sources */,
+				8752423E2804DCF800074402 /* Frameworks */,
+				8752423F2804DCF800074402 /* Resources */,
+				E228082A586E95AF1CE9A956 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TreasureUIExample;
+			productName = TreasureUIExample;
+			productReference = 875242412804DCF800074402 /* TreasureUIExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		875242562804DCFA00074402 /* TreasureUIExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8752426E2804DCFA00074402 /* Build configuration list for PBXNativeTarget "TreasureUIExampleTests" */;
+			buildPhases = (
+				85D5D63445EEB33591E6B2EF /* [CP] Check Pods Manifest.lock */,
+				875242532804DCFA00074402 /* Sources */,
+				875242542804DCFA00074402 /* Frameworks */,
+				875242552804DCFA00074402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				875242592804DCFA00074402 /* PBXTargetDependency */,
+			);
+			name = TreasureUIExampleTests;
+			productName = TreasureUIExampleTests;
+			productReference = 875242572804DCFA00074402 /* TreasureUIExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		875242602804DCFA00074402 /* TreasureUIExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 875242712804DCFA00074402 /* Build configuration list for PBXNativeTarget "TreasureUIExampleUITests" */;
+			buildPhases = (
+				55F302AB3642AA88CED01177 /* [CP] Check Pods Manifest.lock */,
+				8752425D2804DCFA00074402 /* Sources */,
+				8752425E2804DCFA00074402 /* Frameworks */,
+				8752425F2804DCFA00074402 /* Resources */,
+				84F9861E56E1A47CC10C3BFF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				875242632804DCFA00074402 /* PBXTargetDependency */,
+			);
+			name = TreasureUIExampleUITests;
+			productName = TreasureUIExampleUITests;
+			productReference = 875242612804DCFA00074402 /* TreasureUIExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		875242392804DCF800074402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					875242402804DCF800074402 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					875242562804DCFA00074402 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 875242402804DCF800074402;
+					};
+					875242602804DCFA00074402 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 875242402804DCF800074402;
+					};
+				};
+			};
+			buildConfigurationList = 8752423C2804DCF800074402 /* Build configuration list for PBXProject "TreasureUIExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 875242382804DCF800074402;
+			productRefGroup = 875242422804DCF800074402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				875242402804DCF800074402 /* TreasureUIExample */,
+				875242562804DCFA00074402 /* TreasureUIExampleTests */,
+				875242602804DCFA00074402 /* TreasureUIExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8752423F2804DCF800074402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875242962804DE5900074402 /* OpenSans-Semibold.ttf in Resources */,
+				875242832804DE2600074402 /* design_system.json in Resources */,
+				8752429A2804DE5900074402 /* OpenSans-Bold.ttf in Resources */,
+				875242982804DE5900074402 /* OpenSans-Light.ttf in Resources */,
+				875242512804DCFA00074402 /* LaunchScreen.storyboard in Resources */,
+				875242972804DE5900074402 /* Poppins-Medium.otf in Resources */,
+				875242862804DE2600074402 /* treasure_view.json in Resources */,
+				875242822804DE2600074402 /* simple_test.xml in Resources */,
+				875242882804DE2600074402 /* uber_payments_variant.json in Resources */,
+				875242852804DE2600074402 /* Assets.xcassets in Resources */,
+				875242802804DE2600074402 /* treasure_view_test_1.json in Resources */,
+				8752427F2804DE2600074402 /* lime_payment_methods_view.json in Resources */,
+				875242872804DE2600074402 /* blocks_ui.json in Resources */,
+				875242812804DE2600074402 /* blueprint.json in Resources */,
+				8752429B2804DE5900074402 /* OpenSans-Regular.ttf in Resources */,
+				875242842804DE2600074402 /* uber_payments.json in Resources */,
+				875242992804DE5900074402 /* OpenSans-ExtraBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875242552804DCFA00074402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8752425F2804DCFA00074402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55F302AB3642AA88CED01177 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureUIExample-TreasureUIExampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84F9861E56E1A47CC10C3BFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureUIExample-TreasureUIExampleUITests/Pods-TreasureUIExample-TreasureUIExampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureUIExample-TreasureUIExampleUITests/Pods-TreasureUIExample-TreasureUIExampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreasureUIExample-TreasureUIExampleUITests/Pods-TreasureUIExample-TreasureUIExampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85D5D63445EEB33591E6B2EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureUIExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDFF09C13770083E587B4836 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TreasureUIExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E228082A586E95AF1CE9A956 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureUIExample/Pods-TreasureUIExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TreasureUIExample/Pods-TreasureUIExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TreasureUIExample/Pods-TreasureUIExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8752423D2804DCF800074402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8752429E2804DE5900074402 /* StylesPlate.swift in Sources */,
+				8752429D2804DE5900074402 /* ColorPlate.swift in Sources */,
+				878CD6D82807727D00296052 /* DefaultTreasureImageLoader.swift in Sources */,
+				8729D34628089CA700406CBB /* FileResources.swift in Sources */,
+				8752429C2804DE5900074402 /* FontPlate.swift in Sources */,
+				875242452804DCF800074402 /* AppDelegate.swift in Sources */,
+				878CD6D92807727D00296052 /* PaymentFlowViewController.swift in Sources */,
+				8752429F2804DE5900074402 /* LocalImages.swift in Sources */,
+				875242A02804DE5900074402 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		875242532804DCFA00074402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8752425C2804DCFA00074402 /* TreasureUIExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8752425D2804DCFA00074402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875242682804DCFA00074402 /* TreasureUIExampleUITestsLaunchTests.swift in Sources */,
+				875242662804DCFA00074402 /* TreasureUIExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		875242592804DCFA00074402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 875242402804DCF800074402 /* TreasureUIExample */;
+			targetProxy = 875242582804DCFA00074402 /* PBXContainerItemProxy */;
+		};
+		875242632804DCFA00074402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 875242402804DCF800074402 /* TreasureUIExample */;
+			targetProxy = 875242622804DCFA00074402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8752424F2804DCFA00074402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				875242502804DCFA00074402 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		875242692804DCFA00074402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8752426A2804DCFA00074402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8752426C2804DCFA00074402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 158531C3E1DB98728A3FD91A /* Pods-TreasureUIExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89449AARGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TreasureUIExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.elements.TreasureUIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8752426D2804DCFA00074402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC53BF0241EFCE1E2A9E0582 /* Pods-TreasureUIExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89449AARGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TreasureUIExample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.elements.TreasureUIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8752426F2804DCFA00074402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B5C5A9E61644A5B892990D /* Pods-TreasureUIExampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89449AARGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.elements.TreasureUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureUIExample.app/TreasureUIExample";
+			};
+			name = Debug;
+		};
+		875242702804DCFA00074402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 833B4E5A9950A5BC5B077C37 /* Pods-TreasureUIExampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89449AARGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.elements.TreasureUIExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TreasureUIExample.app/TreasureUIExample";
+			};
+			name = Release;
+		};
+		875242722804DCFA00074402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0B9A76028CFC9816BE5D22 /* Pods-TreasureUIExample-TreasureUIExampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89449AARGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.elements.TreasureUIExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TreasureUIExample;
+			};
+			name = Debug;
+		};
+		875242732804DCFA00074402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30939A1EC36F6B6A3BD9BF88 /* Pods-TreasureUIExample-TreasureUIExampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89449AARGW;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.elements.TreasureUIExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TreasureUIExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8752423C2804DCF800074402 /* Build configuration list for PBXProject "TreasureUIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875242692804DCFA00074402 /* Debug */,
+				8752426A2804DCFA00074402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8752426B2804DCFA00074402 /* Build configuration list for PBXNativeTarget "TreasureUIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8752426C2804DCFA00074402 /* Debug */,
+				8752426D2804DCFA00074402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8752426E2804DCFA00074402 /* Build configuration list for PBXNativeTarget "TreasureUIExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8752426F2804DCFA00074402 /* Debug */,
+				875242702804DCFA00074402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		875242712804DCFA00074402 /* Build configuration list for PBXNativeTarget "TreasureUIExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				875242722804DCFA00074402 /* Debug */,
+				875242732804DCFA00074402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 875242392804DCF800074402 /* Project object */;
+}

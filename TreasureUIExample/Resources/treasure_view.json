@@ -1,0 +1,761 @@
+{
+  "screens": [
+    {
+      "id": "root",
+      "name": "root",
+      "screen_id": "root",
+      "style": "root_screen_style",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "payment_methods_display_3"
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              {
+                "section_id": "nav_bar_mobile"
+              },
+            ]
+          },
+          "floating_footer": {
+            "section_details": [
+              
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "push_view_id",
+      "name": "push_view",
+      "screen_id": "push_view_id",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "payment_methods_display_2",
+                "top_padding": 11
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              
+            ]
+          },
+          "floating_footer": {
+            "section_details": [
+              
+            ]
+          }
+        }
+      }
+    },
+  ],
+  "sections" : [
+    {
+      "id": "list",
+      "section_id": "payment_methods_display",
+      "type": "general_list_content",
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "card_container",
+            "type": "card_container",
+            "style": "card_primary",
+            "item": {
+              "id": "item_1",
+              "type": "basic_list_item",
+              "style": "list_secondary",
+              "title": "Visa 5674",
+              "image": {
+                "type": "lottie_url",
+                "value": "https://assets4.lottiefiles.com/private_files/lf30_8txghzek.json"
+              },
+              "on_press_action": {
+                "type": "present_view",
+                "route": {
+                  "file_name": "treasure_view_test_1"
+                }
+              }
+            }
+          },
+          {
+            "id": "image_1",
+            "type": "image",
+            "style": "image_primary",
+            "accessibility_label": "Lottie Image",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets6.lottiefiles.com/packages/lf20_yzoqyyqf.json"
+            }
+          },
+          {
+            "id": "item_1",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Test Visa 5674",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            },
+            "on_press_action": {
+              "type": "present_view",
+              "route": {
+                "file_name": "treasure_view_test_1"
+              }
+            }
+          },
+          {
+            "id": "divider_1",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "item_2",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Mastercard 9023",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            }
+          },
+          {
+            "id": "divider_2",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "item_3",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Paypal",
+            "subtitle": "marvin.zhan@gmail.com",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            }
+          },
+          {
+            "id": "divider_3",
+            "type": "divider",
+            "style": "horizontal_divider",
+          }
+        ]
+      },
+    },
+    {
+      "id": "list_2",
+      "section_id": "payment_methods_display_2",
+      "type": "general_list_content",
+      "layout": {
+        "type": "carousel",
+        "item_width": {
+          "type": "estimated",
+          "value": 215
+        },
+        "item_height": {
+          "type": "estimated",
+          "value": 100
+        },
+        "scroll_type": "group_paging",
+        "section_insets": [8, 12, 8, 12]
+      },
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "item_11",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Visa 5674 123",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            },
+            "on_press_action": {
+              "type": "push_view",
+              "route": {
+                "screen_id": "push_view_id"
+              }
+            }
+          },
+          {
+            "id": "item_12",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Visa 5674 123",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            },
+            "on_press_action": {
+              "type": "push_view",
+              "route": {
+                "screen_id": "push_view_id"
+              }
+            }
+          },
+          {
+            "id": "item_13",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Mastercard",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            },
+            "on_press_action": {
+              "type": "push_view",
+              "route": {
+                "screen_id": "push_view_id"
+              }
+            }
+          }
+        ]
+      },
+    },
+    {
+      "id": "list_3",
+      "section_id": "payment_methods_display_3",
+      "type": "general_list_content",
+      "layout": {
+        "type": "carousel",
+        "item_width": {
+          "type": "estimated",
+          "value": 215
+        },
+        "item_height": {
+          "type": "estimated",
+          "value": 100
+        },
+        "scroll_type": "group_paging",
+        "section_insets": [8, 12, 8, 12]
+      },
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "item_11",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Visa 5674 123",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets4.lottiefiles.com/private_files/lf30_8txghzek.json"
+            },
+            "on_press_action": {
+              "type": "push_view",
+              "route": {
+                "screen_id": "push_view_id"
+              }
+            }
+          },
+          {
+            "id": "item_12",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Visa 5674 123",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets4.lottiefiles.com/private_files/lf30_8txghzek.json"
+            },
+            "on_press_action": {
+              "type": "push_view",
+              "route": {
+                "screen_id": "push_view_id"
+              }
+            }
+          },
+          {
+            "id": "item_13",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Mastercard",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            },
+            "on_press_action": {
+              "type": "push_view",
+              "route": {
+                "screen_id": "push_view_id"
+              }
+            }
+          }
+        ]
+      },
+    },
+    {
+      "id": "nav_bar_mobile",
+      "section_id": "nav_bar_mobile",
+      "type": "general_list_content",
+      "section": {
+        "items": [
+          {
+            "id": "nav_bar",
+            "type": "nav_bar",
+            "style": "nav_bar_style",
+            "title": "Payments",
+            "image": {
+              "type": "local_image",
+              "value": "supreme_close_light_background"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "payment_methods_display_lime",
+      "section_id": "payment_methods_display_lime",
+      "type": "general_list_content",
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "label_title",
+            "type": "label",
+            "style": "header_text",
+            "title": "PAYMENT METHODS"
+          },
+          {
+            "id": "divider_apple_pay",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "h_group_4",
+            "type": "h_group",
+            "style": "h_group_secondary",
+            "items": [
+              {
+                "id": "image_2",
+                "type": "image",
+                "style": "image_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "checkmark_grey"
+                }
+              },
+              {
+                "id": "image_3",
+                "type": "image",
+                "style": "image_secondary",
+                "image": {
+                  "type": "local_image",
+                  "value": "apple_pay_icon"
+                }
+              },
+              {
+                "id": "item_11",
+                "type": "basic_list_item",
+                "style": "list_secondary",
+                "title": "Apple Pay",
+                "on_press_action": {
+                  "type": "push_view",
+                  "route": {
+                    "screen_id": "push_view_id"
+                  }
+                }
+              },
+              {
+                "id": "image_4",
+                "type": "image",
+                "style": "image_extra_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "disclosure_indicator_dark"
+                }
+              },
+            ],
+            "on_press_action": {
+              "type": "present_view",
+              "route": {
+                "file_name": "payment_methods_view"
+              }
+            }
+          },
+          {
+            "id": "divider_0",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "h_group_3",
+            "type": "h_group",
+            "style": "h_group_secondary",
+            "items": [
+              {
+                "id": "image_2",
+                "type": "image",
+                "style": "image_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "checkmark_grey"
+                }
+              },
+              {
+                "id": "image_3",
+                "type": "image",
+                "style": "image_secondary",
+                "accessibility_label": "4",
+                "image": {
+                  "type": "local_image",
+                  "value": "payment_mastercard"
+                }
+              },
+              {
+                "id": "item_11",
+                "type": "basic_list_item",
+                "style": "list_secondary",
+                "title": "•••• 9023 (Default)",
+                "on_press_action": {
+                  "type": "push_view",
+                  "route": {
+                    "screen_id": "push_view_id"
+                  }
+                }
+              },
+              {
+                "id": "image_4",
+                "type": "image",
+                "style": "image_extra_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "disclosure_indicator_dark"
+                }
+              },
+            ],
+          },
+          {
+            "id": "divider_2",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "h_group_2",
+            "type": "h_group",
+            "style": "h_group_primary",
+            "items": [
+              {
+                "id": "image_2",
+                "type": "image",
+                "style": "image_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "checkmark_green"
+                }
+              },
+              {
+                "id": "image_3",
+                "type": "image",
+                "style": "image_secondary",
+                "accessibility_label": "4",
+                "image": {
+                  "type": "local_image",
+                  "value": "ic_rider_payment_paypal"
+                }
+              },
+              {
+                "id": "item_11",
+                "type": "basic_list_item",
+                "style": "list_secondary",
+                "title": "Paypal",
+                "subtitle": "marvin.zhan@gmail.com",
+                "on_press_action": {
+                  "type": "push_view",
+                  "route": {
+                    "screen_id": "push_view_id"
+                  }
+                }
+              },
+              {
+                "id": "image_4",
+                "type": "image",
+                "style": "image_extra_small",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "local_image",
+                  "value": "disclosure_indicator_dark"
+                }
+              },
+            ],
+          },
+          {
+            "id": "divider_7",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "divider_3",
+            "type": "divider",
+            "style": "spacer_divider",
+          },
+          {
+            "id": "divider_6",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "item_12",
+            "type": "basic_list_item",
+            "style": "list_secondary_add_card",
+            "title": "Add card",
+            "image": {
+              "type": "local_image",
+              "value": "ic_supreme_payment_creditcard"
+            }
+          },
+          {
+            "id": "divider_5",
+            "type": "divider",
+            "style": "horizontal_divider",
+          }
+        ]
+      },
+    },
+  ],
+  "styles": [
+    {
+      "type": "screen",
+      "id": "root_screen_style",
+      "background_color": "#F2F2F2"
+    },
+    {
+      "type": "nav_bar_style",
+      "id": "nav_bar_style",
+      "bottom_line_height": 1,
+      "bottom_line_visibility": "visible_by_offset",
+      "bottom_line_color": "#ff5647",
+      "layout_margins": [12, 12, 12, 12],
+      "title_style_id": "primary_text",
+      "image_style_id": "image_nav_bar",
+      "background_color": "#F2F2F2",
+      "height": 60
+    },
+    {
+      "type": "image",
+      "id": "image_nav_bar",
+      "height": 70,
+      "width": 70
+    },
+    {
+      "type": "label",
+      "id": "header_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "layout_margins": [12, 24, 12, 12],
+      "font": {
+        "name": "Poppins-Medium",
+        "size": 14
+      }
+    },
+    {
+      "type": "label",
+      "id": "primary_text",
+      "alignment": "center",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "font": {
+        "name": "Poppins-Medium",
+        "size": 18
+      }
+    },
+    {
+      "type": "label",
+      "id": "list_item_title",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#666666",
+      "font": {
+        "name": "Avenir-Medium",
+        "size": 17
+      }
+    },
+    {
+      "type": "label",
+      "id": "secondary_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#878883",
+      "font": {
+        "name": "Avenir",
+        "size": 16
+      }
+    },
+    {
+      "type": "label",
+      "id": "green_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#00C700",
+      "font": {
+        "name": "Avenir",
+        "size": 16
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_primary",
+      "height": 100,
+      "width": 100,
+      "corner_radius": 4
+    },
+    {
+      "type": "image",
+      "id": "image_secondary",
+      "height": 40,
+      "width": 40,
+      "corner_radius": 4
+    },
+    {
+      "type": "image",
+      "id": "image_small",
+      "height": 24,
+      "width": 24,
+      "corner_radius": 4,
+      "layout_margins": [0, 0, 0, 16]
+    },
+    {
+      "type": "image",
+      "id": "image_extra_small",
+      "height": 16,
+      "width": 8,
+      "layout_margins": [0, 0, 0, 16]
+    },
+    {
+      "id": "list_primary",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "v_space": 4,
+      "title_and_subtitle_style_id": "title_subtitle_primary",
+      "layout_margins": [0, 0, 0, 0]
+    },
+    {
+      "id": "list_secondary",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "h_space": 12,
+      "title_and_subtitle_style_id": "title_subtitle_list_item",
+      "background_color": "#ffffff",
+      "image_style_id": "image_secondary",
+      "layout_margins": [12, 8, 12, 16]
+    },
+    {
+      "id": "list_secondary_add_card",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "h_space": 16,
+      "title_and_subtitle_style_id": "title_subtitle_list_item_green",
+      "background_color": "#ffffff",
+      "image_style_id": "image_secondary",
+      "layout_margins": [12, 16, 12, 16]
+    },
+    {
+      "id": "title_subtitle_list_item_green",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "v_space": 0,
+      "title_style_id": "green_text",
+      "subtitle_style_id": "secondary_text",
+    },
+    {
+      "id": "title_subtitle_list_item",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "v_space": 0,
+      "title_style_id": "list_item_title",
+      "subtitle_style_id": "secondary_text",
+    },
+    {
+      "id": "title_subtitle_primary",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "v_space": 0,
+      "title_style_id": "primary_text",
+      "subtitle_style_id": "secondary_text",
+    },
+    {
+      "id": "v_group_primary",
+      "type": "group",
+      "v_group_align": "leading",
+      "spacing": 8,
+      "layout_margins": [32, 12, 24, 32]
+    },
+    {
+      "id": "h_group_primary",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 8,
+      "layout_margins": [0, 24, 0, 0],
+      "background_color": "#ffffff"
+    },
+    {
+      "id": "h_group_secondary",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 8,
+      "layout_margins": [8, 24, 8, 0],
+      "background_color": "#ffffff"
+    },
+    {
+      "id": "h_group_leading",
+      "type": "group",
+      "h_group_align": "top",
+      "spacing": 4
+    },
+    {
+      "id": "horizontal_divider",
+      "type": "divider",
+      "height": 1,
+      "color": "#CCCCCC",
+      "layout_margins": [0, 0, 0, 0]
+    },
+    {
+      "id": "spacer_divider",
+      "type": "divider",
+      "height": 10,
+      "color": "#F2F2F2",
+      "layout_margins": [0, 0, 0, 0]
+    },
+    {
+      "id": "list_group_primary",
+      "type": "basic_list_item",
+      "h_group_align": "fill",
+      "v_space": 4,
+      "title_and_subtitle_style_id": "title_subtitle_primary",
+      "image_style_id": "image_secondary",
+      "layout_margins": [0, 0, 0, 0]
+    },
+    {
+      "id": "list_group_secondary",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "h_space": 16,
+      "title_and_subtitle_style_id": "title_subtitle_primary",
+      "image_style_id": "image_secondary",
+      "layout_margins": [12, 16, 12, 16]
+    },
+    {
+      "id": "card_primary",
+      "type": "card_container",
+      "corner_radius": 8,
+      "background_color": "#ffffff"
+    }
+  ]
+}

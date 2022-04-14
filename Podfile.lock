@@ -1,0 +1,47 @@
+PODS:
+  - lottie-ios (3.3.0)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - SnapKit (5.6.0)
+  - Sourcery (1.8.0):
+    - Sourcery/CLI-Only (= 1.8.0)
+  - Sourcery/CLI-Only (1.8.0)
+  - TreasureUI (1.0.4):
+    - TreasureUI/Core (= 1.0.4)
+  - TreasureUI/Core (1.0.4)
+
+DEPENDENCIES:
+  - lottie-ios
+  - SDWebImage
+  - SnapKit
+  - Sourcery
+  - TreasureUI (from `https://github.com/elementspay/Treasure-iOS-Distribution.git`, tag `1.0.4`)
+
+SPEC REPOS:
+  trunk:
+    - lottie-ios
+    - SDWebImage
+    - SnapKit
+    - Sourcery
+
+EXTERNAL SOURCES:
+  TreasureUI:
+    :git: https://github.com/elementspay/Treasure-iOS-Distribution.git
+    :tag: 1.0.4
+
+CHECKOUT OPTIONS:
+  TreasureUI:
+    :git: https://github.com/elementspay/Treasure-iOS-Distribution.git
+    :tag: 1.0.4
+
+SPEC CHECKSUMS:
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Sourcery: 6f5fe49b82b7e02e8c65560cbd52e1be67a1af2e
+  TreasureUI: a09d7b2198057fa367e97d44f005878a93b98030
+
+PODFILE CHECKSUM: fd0d9fcbaf686bb326a8a358608cdde559d5d221
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,84 @@
+
+{
+  "screens": [
+    {
+      "id": "root",
+      "name": "root",
+      "screen_id": "root",
+      "style": "root_screen_style",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "list"
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              {
+                "section_id": "nav_bar_mobile"
+              },
+            ]
+          },
+          "floating_footer": {
+            "section_details": [
+
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "sections" : [
+    {
+      "id": "nav_bar_mobile",
+      "type": "general_list_content",
+      "section": {
+        "items": [
+          {
+            "id": "nav_bar",
+            "type": "nav_bar",
+            "style": "nav_bar_style",
+            "title": "",
+            "image": {
+              "type": "local_image",
+              "value": "dark_gray_close"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "list",
+      "type": "general_list_content",
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "header",
+            "type": "label",
+            "style": "primary_label",
+            "title": "Header 123"
+          },
+          {
+            "id": "divider_apple_pay",
+            "type": "divider",
+            "style": "horizontal_divider",
+          }
+        ]
+      },
+    }
+  ],
+  "styles": [
+    {
+      "type": "screen",
+      "id": "root_screen_style",
+      "basic_props": {
+        "background_color": "#F2F2F2"
+      }
+    }
+  ]
+}

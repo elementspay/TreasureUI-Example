@@ -1,0 +1,633 @@
+{
+  "context": {
+    "id": "payment_methods_context",
+    "value": {
+      "lime_cash": [
+        {
+          "id": "lime_cash",
+          "type": "basic_list_item",
+          "style": "list_lime_cash",
+          "title": "$2.23",
+          "image": {
+            "type": "image_url",
+            "value": "https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135017-visa_82256.png"
+          },
+          "trailing_image": {
+            "type": "local_image",
+            "value": "disclosure_indicator_dark"
+          },
+          "on_press_action": {
+            "type": "external_action",
+            "action_type": "show_add_card_view"
+          }
+        }
+      ],
+      "available_payment_methods": [
+        {
+          "id": "add_card",
+          "type": "basic_list_item",
+          "style": "list_secondary_add_card",
+          "title": "Add card",
+          "image": {
+            "type": "lottie_url",
+            "value": "https://assets5.lottiefiles.com/packages/lf20_hcae8wxn.json"
+          },
+          "on_press_action": {
+            "type": "sdk_action",
+            "action_type": "show_add_card_view",
+            "on_success": [
+              {
+                "type": "external_action",
+                "action_type": "refresh_context"
+              }
+            ]
+          }
+        },
+        {
+          "id": "add_paypal",
+          "type": "basic_list_item",
+          "style": "list_secondary_add_card",
+          "title": "Add paypal",
+          "image": {
+            "type": "local_image",
+            "value": "ic_rider_payment_paypal"
+          },
+          "on_press_action": {
+            "type": "sdk_action",
+            "action_type": "redirect",
+            "data": {
+              "type": "paypal"
+            },
+            "on_success": [
+              {
+                "type": "external_action",
+                "action_type": "refresh_context"
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "id": "payment_method_item_apple_pay_1",
+          "type": "blueprint",
+          "blueprint_id": "payment_method_item",
+          "context": {
+            "id": "context",
+            "value": {
+              "leading_image": {
+                "type": "local_image",
+                "value": "checkmark_grey"
+              },
+              "item_image": {
+                "type": "local_image",
+                "value": "apple_pay_icon"
+              },
+              "title": "Test this",
+              "trailing_image_style_id": "image_extra_small",
+              "on_press_action": {
+                "type": "push_view",
+                "route": {
+                  "screen_id": "push_view_id"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "payment_method_item_card_1",
+          "type": "blueprint",
+          "blueprint_id": "payment_method_item",
+          "context": {
+            "id": "context",
+            "value": {
+              "leading_image": {
+                "type": "local_image",
+                "value": "checkmark_grey"
+              },
+              "item_image": {
+                "type": "local_image",
+                "value": "payment_mastercard"
+              },
+              "title": "•••• 9023 (Default)",
+              "trailing_image": {
+                "type": "local_image",
+                "value": "disclosure_indicator_dark"
+              },
+              "trailing_image_style_id": "image_extra_small"
+            }
+          }
+        },
+        {
+          "id": "payment_method_item_card_2",
+          "type": "blueprint",
+          "blueprint_id": "payment_method_item",
+          "context": {
+            "id": "context",
+            "value": {
+              "leading_image": {
+                "type": "local_image",
+                "value": "checkmark_grey"
+              },
+              "item_image": {
+                "type": "local_image",
+                "value": "ic_rider_payment_paypal"
+              },
+              "title": "Paypal",
+              "subtitle": "marvin.zhan@gmail.com",
+              "trailing_image": {
+                "type": "local_image",
+                "value": "delete_card_gray"
+              },
+              "trailing_image_style_id": "image_delete_icon",
+              "on_press_trailing_image": {
+                "type": "send_request",
+                "url": "api/v1/payment_methods/KB6APUO2PWENL/delete",
+                "method": "POST",
+                "data": {
+                  "external_customer_id": "34551b54-d87e-4cf7-ba80-010bf2d10815"
+                },
+                "show_loading": true,
+                "on_success": [
+                  {
+                    "type": "external_action",
+                    "action_type": "refresh_context"
+                  }
+                ],
+                "on_error": [],
+                "on_finish": []
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "screens": [
+    {
+      "id": "root",
+      "name": "root",
+      "screen_id": "root",
+      "style": "root_screen_style",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "payment_methods_display_lime"
+              },
+              {
+                "section_id": "lime_cash"
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              {
+                "section_id": "nav_bar_mobile"
+              }
+            ]
+          },
+          "floating_footer": {
+            "section_details": [
+
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "sections" : [
+    {
+      "id": "nav_bar_mobile",
+      "type": "general_list_content",
+      "section": {
+        "items": [
+          {
+            "id": "nav_bar",
+            "type": "nav_bar",
+            "style": "nav_bar_style",
+            "title": "Payments",
+            "image": {
+              "type": "local_image",
+              "value": "supreme_close_light_background"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "payment_methods_display_lime",
+      "type": "general_list_content",
+      "layout": {
+        "type": "list",
+        "section_insets": [24, 0, 0, 0]
+      },
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "label_title",
+            "type": "label",
+            "style": "header_text",
+            "title": "PAYMENT METHODS"
+          },
+          {
+            "id": "divider_apple_pay",
+            "type": "divider",
+            "style": "horizontal_divider"
+          },
+          {
+            "id": "items_placeholder",
+            "type": "context_element",
+            "items": "@{payment_methods_context.items}",
+            "supplementary_items": [
+              {
+                "id": "divider",
+                "type": "divider",
+                "style": "horizontal_divider"
+              }
+            ]
+          },
+          {
+            "id": "divider_3",
+            "type": "divider",
+            "style": "spacer_divider"
+          },
+          {
+            "id": "divider_6",
+            "type": "divider",
+            "style": "horizontal_divider"
+          },
+          {
+            "id": "add_payment_methods_placeholder",
+            "type": "context_element",
+            "items": "@{payment_methods_context.available_payment_methods}",
+            "supplementary_items": [
+              {
+                "id": "divider",
+                "type": "divider",
+                "style": "horizontal_divider"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "lime_cash",
+      "type": "general_list_content",
+      "layout": {
+        "type": "list",
+        "section_insets": [32, 0, 0, 0]
+      },
+      "section": {
+        "items": [
+          {
+            "id": "label_title",
+            "type": "label",
+            "style": "header_text",
+            "title": "LIME CASH"
+          },
+          {
+            "id": "divider_apple_pay",
+            "type": "divider",
+            "style": "horizontal_divider"
+          },
+          {
+            "id": "items_placeholder",
+            "type": "context_element",
+            "items": "@{payment_methods_context.lime_cash}",
+            "supplementary_items": [
+              {
+                "id": "divider",
+                "type": "divider",
+                "style": "horizontal_divider"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "blueprints": [
+    {
+      "id": "payment_method_item",
+      "type": "h_group",
+      "style": "h_group_secondary",
+      "items": [
+        {
+          "id": "image_2",
+          "type": "image",
+          "style": "image_small",
+          "accessibility_label": "3",
+          "image": "@{context.leading_image}"
+        },
+        {
+          "id": "image_3",
+          "type": "image",
+          "style": "image_secondary",
+          "image": "@{context.item_image}"
+        },
+        {
+          "id": "item_11",
+          "type": "basic_list_item",
+          "style": "list_secondary",
+          "title": "@{context.title}",
+          "subtitle": "@{context.subtitle}"
+        },
+        {
+          "id": "image_4",
+          "type": "image",
+          "style": "@{context.trailing_image_style_id}",
+          "accessibility_label": "3",
+          "image": "@{context.trailing_image}",
+          "on_press_action": "@{context.on_press_trailing_image}"
+        }
+      ],
+      "on_press_action": {
+        "type": "send_request",
+        "url": "/todos/1",
+        "method": "GET",
+        "show_loading": true,
+        "on_success": [
+          {
+            "type": "refresh_view",
+            "route": {
+              "file_name": "blueprint"
+            }
+          }
+        ],
+        "on_error": [],
+        "on_finish": []
+      }
+    },
+    {
+      "id": "lime_cash_item",
+      "type": "h_group",
+      "style": "h_group_secondary",
+      "items": [
+        {
+          "id": "image_2",
+          "type": "image",
+          "style": "image_small",
+          "accessibility_label": "3",
+          "image": "@{context.leading_image}"
+        },
+        {
+          "id": "item_11",
+          "type": "basic_list_item",
+          "style": "list_secondary",
+          "title": "@{context.title}",
+          "subtitle": "@{context.subtitle}"
+        },
+        {
+          "id": "image_4",
+          "type": "image",
+          "style": "@{context.trailing_image_style_id}",
+          "accessibility_label": "3",
+          "image": "@{context.trailing_image}"
+        }
+      ],
+      "on_press_action": {
+        "type": "send_request",
+        "url": "/todos/1",
+        "method": "GET",
+        "show_loading": true,
+        "on_success": [
+          {
+            "type": "refresh_view",
+            "route": {
+              "file_name": "blueprint"
+            }
+          }
+        ],
+        "on_error": [],
+        "on_finish": []
+      }
+    }
+  ],
+  "styles": [
+    {
+      "type": "screen",
+      "id": "root_screen_style",
+      "basic_props": {
+        "background_color": "#F2F2F2"
+      }
+    },
+    {
+      "type": "nav_bar_style",
+      "id": "nav_bar_style",
+      "bottom_line_height": 1,
+      "bottom_line_visibility": "visible_by_offset",
+      "bottom_line_color": "#CCCCCC",
+      "title_style_id": "primary_text",
+      "image_style_id": "image_nav_bar",
+      "height": 80,
+
+      "basic_props": {
+        "background_color": "#F2F2F2",
+        "layout_margins": [24, 12, 12, 12]
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_nav_bar",
+      "image_height": 70,
+      "image_width": 70
+    },
+    {
+      "type": "label",
+      "id": "header_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 14
+      },
+      "basic_props": {
+        "layout_margins": [12, 24, 12, 12]
+      }
+    },
+    {
+      "type": "label",
+      "id": "primary_text",
+      "alignment": "center",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 18
+      }
+    },
+    {
+      "type": "label",
+      "id": "list_item_title",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Avenir-Medium",
+        "size": 17
+      }
+    },
+    {
+      "type": "label",
+      "id": "secondary_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#878883",
+      "text_font": {
+        "name": "Avenir",
+        "size": 16
+      }
+    },
+    {
+      "type": "label",
+      "id": "green_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#00C700",
+      "text_font": {
+        "name": "Avenir",
+        "size": 18
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_primary",
+      "image_height": 100,
+      "image_width": 100,
+      "corner_radius": 4
+    },
+    {
+      "type": "image",
+      "id": "image_secondary",
+      "image_height": 40,
+      "image_width": 40,
+      "corner_radius": 4
+    },
+    {
+      "type": "image",
+      "id": "image_small",
+      "image_height": 24,
+      "image_width": 24,
+      "corner_radius": 4,
+      "basic_props": {
+        "layout_margins": [0, 0, 0, 16]
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_extra_small",
+      "image_height": 16,
+      "image_width": 8,
+      "basic_props": {
+        "layout_margins": [0, 0, 0, 16]
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_delete_icon",
+      "image_height": 52.5,
+      "image_width": 30,
+      "basic_props": {
+        "layout_margins": [0, 0, 0, 16]
+      }
+    },
+    {
+      "id": "list_secondary",
+      "type": "basic_list_item",
+      "h_group_alignment": "fill",
+      "h_spacing": 12,
+      "title_subtitle_style_id": "title_subtitle_list_item",
+      "image_style_id": "image_secondary",
+      "basic_props": {
+        "background_color": "#ffffff",
+        "layout_margins": [12, 8, 12, 16]
+      }
+    },
+    {
+      "id": "list_secondary_add_card",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "h_spacing": 16,
+      "title_subtitle_style_id": "title_subtitle_list_item_green",
+      "image_style_id": "image_secondary",
+      "basic_props": {
+        "layout_margins": [12, 16, 12, 16],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "id": "list_lime_cash",
+      "type": "basic_list_item",
+      "alignment": "fill",
+      "h_spacing": 16,
+      "title_subtitle_style_id": "title_subtitle_list_item",
+      "image_style_id": "image_small",
+      "trailing_image_style_id": "image_extra_small",
+      "basic_props": {
+        "layout_margins": [20, 16, 20, 0],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "id": "title_subtitle_list_item_green",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "vertical_spacing": 0,
+      "title_style_id": "green_text",
+      "subtitle_style_id": "secondary_text"
+    },
+    {
+      "id": "title_subtitle_list_item",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "vertical_spacing": 0,
+      "title_style_id": "list_item_title",
+      "subtitle_style_id": "secondary_text"
+    },
+    {
+      "id": "h_group_primary",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 8,
+      "basic_props": {
+        "layout_margins": [0, 24, 0, 0],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "id": "h_group_secondary",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 8,
+
+      "basic_props": {
+        "layout_margins": [8, 24, 8, 0],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "id": "h_group_leading",
+      "type": "group",
+      "h_group_align": "top",
+      "spacing": 4
+    },
+    {
+      "id": "horizontal_divider",
+      "type": "divider",
+      "height": 1,
+      "color": "#CCCCCC"
+    },
+    {
+      "id": "spacer_divider",
+      "type": "divider",
+      "height": 10,
+      "color": "#F2F2F2"
+    }
+  ]
+}

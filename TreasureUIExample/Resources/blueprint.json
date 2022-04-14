@@ -1,0 +1,709 @@
+{
+  "screens": [
+    {
+      "id": "root",
+      "name": "root",
+      "screen_id": "root",
+      "style": "root_screen_style",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "cards"
+              },
+              {
+                "section_id": "payment_methods_display_uber"
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              {
+                "section_id": "nav_bar_mobile"
+              }
+            ]
+          },
+          "floating_footer": {
+            "section_details": []
+          }
+        }
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "nav_bar_mobile",
+      "section_id": "nav_bar_mobile",
+      "type": "general_list_content",
+      "section": {
+        "items": [
+          {
+            "id": "nav_bar",
+            "type": "nav_bar",
+            "style": "nav_bar_style",
+            "title": "",
+            "image": {
+              "type": "local_image",
+              "value": "dark_gray_close"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cards",
+      "type": "general_list_content",
+      "layout": {
+        "type": "carousel",
+        "item_width": {
+          "type": "fractional",
+          "value": 0.9
+        },
+        "item_height": {
+          "type": "estimated",
+          "value": 100
+        },
+        "scroll_type": "group_paging",
+        "section_insets": [9, 16, 8, 24]
+      },
+      "section": {
+        "items": [
+          {
+            "id": "card_container_10",
+            "type": "blueprint",
+            "blueprint_id": "payment_method_card_blueprint",
+            "style": "card_primary",
+            "context": {
+              "id": "card_container_context",
+              "value": {
+                "owner_name": "Hao Min",
+                "primary_card_number": "•••• •••• •••• 4242",
+                "expiration": "02/24",
+                "cvv": "424",
+                "logo": {
+                  "type": "local_image",
+                  "value": "payment_mastercard"
+                }
+              }
+            }
+          },
+          {
+            "id": "card_container_20",
+            "type": "blueprint",
+            "blueprint_id": "payment_method_card_blueprint",
+            "style": "card_primary",
+            "context": {
+              "id": "card_container_context",
+              "value": {
+                "owner_name": "Hao Min",
+                "primary_card_number": "•••• •••• •••• 5151",
+                "expiration": "05/26",
+                "cvv": "231",
+                "logo": {
+                  "type": "local_image",
+                  "value": "payment_visa"
+                }
+              }
+            }
+          },
+          {
+            "id": "card_container_13",
+            "type": "blueprint",
+            "blueprint_id": "card_container_blueprint",
+            "context": {
+              "id": "card_container_context",
+              "value": {
+                "card_title": "Uber Cash",
+                "money_title": "$111.00",
+                "auto_refill_title": "123"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "payment_methods_display_uber",
+      "section_id": "payment_methods_display_uber",
+      "type": "general_list_content",
+      "section": {
+        "items": [
+          {
+            "id": "label_title",
+            "type": "label",
+            "style": "section_header_text",
+            "title": "Add New Payment Method"
+          },
+          {
+            "id": "applepay",
+            "type": "blueprint",
+            "blueprint_id": "payment_method_item_blueprint",
+            "context": {
+              "id": "payment_method_item_context",
+              "value": {
+                "title": "ApplePay",
+                "image": {
+                  "type": "local_image",
+                  "value": "apple_pay_icon"
+                }
+              }
+            }
+          },
+          {
+            "id": "divider_0",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "card_1",
+            "type": "blueprint",
+            "blueprint_id": "payment_method_item_blueprint",
+            "context": {
+              "id": "payment_method_item_context",
+              "value": {
+                "title": "Add Credit/Debit Card",
+                "image": {
+                  "type": "local_image",
+                  "value": "ic_credit_card"
+                }
+              }
+            }
+          },
+          {
+            "id": "divider_4",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "card_2",
+            "type": "blueprint",
+            "blueprint_id": "payment_method_item_blueprint",
+            "context": {
+              "id": "payment_method_item_context",
+              "value": {
+                "title": "Link Bank Account",
+                "image": {
+                  "type": "local_image",
+                  "value": "ic_bank"
+                }
+              }
+            }
+          },
+          {
+            "id": "divider_1",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "card_3",
+            "type": "blueprint",
+            "blueprint_id": "payment_method_item_blueprint",
+            "context": {
+              "id": "payment_method_item_context",
+              "value": {
+                "title": "Paypal",
+                "subtitle": "marvin.zhan@gmail.com",
+                "image": {
+                  "type": "local_image",
+                  "value": "ic_rider_payment_paypal"
+                }
+              }
+            }
+          },
+          {
+            "id": "divider_6",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "add_card",
+            "type": "basic_list_item",
+            "style": "list_secondary_add_card",
+            "title": "Add Promo Code",
+            "image": {
+              "type": "local_image",
+              "value": "add_black"
+            }
+          }
+        ],
+      },
+    },
+  ],
+  "blueprints": [
+    {
+      "id": "card_container_blueprint",
+      "type": "card_container",
+      "style": "card_primary",
+      "item": {
+        "id": "v_group_card",
+        "type": "v_group",
+        "style": "v_group_card",
+        "items": [
+          {
+            "id": "uber_cash_title",
+            "type": "label",
+            "style": "uber_cash_title",
+            "title": "@{card_container_context.card_title}"
+          },
+          {
+            "id": "cash_hgroup",
+            "type": "h_group",
+            "style": "h_group_secondary",
+            "items": [
+              {
+                "id": "money_title",
+                "type": "label",
+                "style": "money_title",
+                "title": "@{card_container_context.money_title}"
+              },
+              {
+                "id": "image",
+                "type": "image",
+                "style": "image_small",
+                "image": {
+                  "type": "local_image",
+                  "value": "disclosure_indicator_dark"
+                }
+              }
+            ]
+          },
+          {
+            "id": "auto_refill",
+            "type": "label",
+            "style": "auto_refill_title",
+            "title": "@{card_container_context.auto_refill_title}"
+          },
+          {
+            "id": "add_funds_button",
+            "type": "button",
+            "style": "add_funds_button",
+            "title": "Add funds",
+            "image": {
+              "type": "local_image",
+              "value": "add_white"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "payment_method_card_blueprint",
+      "type": "card_container",
+      "style": "card_primary",
+      "background_blur_image": {
+        "type": "local_image",
+        "value": "blurring-background-image"
+      },
+      "item": {
+        "id": "v_group_card",
+        "type": "v_group",
+        "style": "v_group_card",
+        "items": [
+          {
+            "id": "card_logo",
+            "type": "image",
+            "style": "payment_method_card_logo",
+            "image": "@{card_container_context.logo}"
+          },
+          {
+            "id": "owner_name",
+            "type": "label",
+            "style": "owner_name",
+            "title": "@{card_container_context.owner_name}"
+          },
+          {
+            "id": "primary_card_number",
+            "type": "label",
+            "style": "primary_number_title",
+            "title": "@{card_container_context.primary_card_number}"
+          },
+          {
+            "id": "cash_hgroup",
+            "type": "h_group",
+            "style": "h_group_secondary",
+            "items": [
+              {
+                "id": "card_expiration",
+                "type": "label",
+                "style": "card_expiration",
+                "title": "@{card_container_context.expiration}"
+              },
+              {
+                "id": "card_cvv",
+                "type": "label",
+                "style": "card_cvv",
+                "title": "@{card_container_context.cvv}"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "payment_method_item_blueprint",
+      "type": "h_group",
+      "style": "h_group_payment_method_item",
+      "items": [
+        {
+          "id": "image_3",
+          "type": "image",
+          "style": "payment_method_image",
+          "image": "@{payment_method_item_context.image}"
+        },
+        {
+          "id": "item_11",
+          "type": "basic_list_item",
+          "style": "payment_method_item_text",
+          "title": "@{payment_method_item_context.title}",
+          "on_press_action": {
+            "type": "push_view",
+            "route": {
+              "screen_id": "push_view_id"
+            }
+          }
+        },
+        {
+          "id": "image_4",
+          "type": "image",
+          "style": "image_extra_small",
+          "accessibility_label": "3",
+          "image": {
+            "type": "local_image",
+            "value": "disclosure_indicator_dark"
+          }
+        },
+      ],
+      "on_press_action": {
+        "type": "present_view",
+        "style": "wrap_content",
+        "route": {
+          "file_name": "treasure_view"
+        }
+      }
+    },
+  ],
+  "styles": [
+    {
+      "type": "screen",
+      "id": "root_screen_style",
+      "basic_props": {
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "type": "nav_bar_style",
+      "id": "nav_bar_style",
+      "bottom_line_height": 1,
+      "bottom_line_visibility": "visible_by_offset",
+      "bottom_line_color": "#DDDDDD",
+
+      "title_style_id": "primary_text",
+      "image_style_id": "image_nav_bar",
+
+      "height": 60,
+      "basic_props": {
+        "background_color": "#ffffff",
+        "layout_margins": [0, 20, 12, 12]
+      }
+    },
+    {
+      "type": "label",
+      "id": "primary_text",
+      "alignment": "center",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 18
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_nav_bar",
+      "image_height": 20,
+      "image_width": 20
+    },
+    {
+      "id": "card_primary",
+      "type": "card_container",
+      "card_corner_radius": 20,
+      "card_background_color": "#21B6A8",
+      "card_layout_margins": [8, 0, 0, 0]
+    },
+    {
+      "id": "v_group_card",
+      "type": "group",
+      "v_group_alignment": "fill",
+      "spacing": 4,
+      "basic_props": {
+        "layout_margins": [0, 24, 0, 0],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "type": "label",
+      "id": "uber_cash_title",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 16
+      },
+      "basic_props": {
+        "layout_margins": [24, 24, 0, 0]
+      }
+    },
+    {
+      "type": "label",
+      "id": "card_expiration",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "OpenSans-light",
+        "size": 16
+      },
+      "basic_props": {
+        "layout_margins": [12, 25, 12, 0]
+      }
+    },
+    {
+      "type": "label",
+      "id": "card_cvv",
+      "alignment": "trailing",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "OpenSans-light",
+        "size": 16
+      },
+      "basic_props": {
+        "layout_margins": [12, 25, 12, 40]
+      }
+    },
+    {
+      "type": "label",
+      "id": "money_title",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 34
+      },
+      "basic_props": {
+        "layout_margins": [4, 24, 0, 0]
+      }
+    },
+    {
+      "type": "label",
+      "id": "owner_name",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "OpenSans-Light",
+        "size": 18
+      },
+      "basic_props": {
+        "layout_margins": [0, 24, 0, 0]
+      }
+    },
+    {
+      "type": "label",
+      "id": "primary_number_title",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "OpenSans-semibold",
+        "size": 24
+      },
+      "basic_props": {
+        "layout_margins": [12, 24, 0, 0]
+      }
+    },
+    {
+      "type": "label",
+      "id": "wallet_header",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Poppins-Medium",
+        "size": 34
+      },
+      "basic_props": {
+        "layout_margins": [4, 24, 12, 24]
+      }
+    },
+    {
+      "type": "label",
+      "id": "auto_refill_title",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Avenir-Book",
+        "size": 14
+      },
+      "basic_props": {
+        "layout_margins": [0, 24, 0, 0]
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_small",
+      "image_height": 24,
+      "image_width": 16,
+      "basic_props": {
+        "layout_margins": [0, 0, 0, 24]
+      }
+    },
+    {
+      "id": "h_group_secondary",
+      "type": "group",
+      "h_group_alignment": "fill",
+      "spacing": 8,
+      "basic_props": {
+        "background_color": "#ffffff",
+        "layout_margins": [8, 24, 8, 0]
+      }
+    },
+    {
+      "id": "add_funds_button",
+      "type": "button",
+      "text_color": "#ffffff",
+      "text_font": {
+        "name": "Avenir-Medium",
+        "size": 16
+      },
+      "button_height": 50,
+      "basic_props": {
+        "corner_radius": 24,
+        "background_color": "#000000",
+        "layout_margins": [16, 20, 24, 0]
+      }
+    },
+    {
+      "type": "label",
+      "id": "section_header_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Avenir-Medium",
+        "size": 20
+      },
+      "basic_props": {
+        "layout_margins": [32, 24, 12, 12]
+      }
+    },
+    {
+      "id": "h_group_payment_method_item",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 0,
+      "basic_props": {
+        "layout_margins": [8, 24, 8, 0],
+        "background_color": "#ffffff"
+      }
+    },
+    {
+      "type": "image",
+      "id": "payment_method_image",
+      "image_height": 40,
+      "image_width": 40,
+      "basic_props": {
+        "layout_margins": [0, 0, 0, 16]
+      }
+    },
+    {
+      "type": "image",
+      "id": "payment_method_card_logo",
+      "image_height": 80,
+      "image_width": 80,
+      "basic_props": {
+        "layout_margins": [0, 200, 0, 0]
+      }
+    },
+    {
+      "id": "payment_method_item_text",
+      "type": "basic_list_item",
+      "title_subtitle_style_id": "title_subtitle_list_item",
+      "background_color": "#ffffff"
+    },
+    {
+      "id": "title_subtitle_list_item",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "vertical_spacing": 0,
+      "title_style_id": "list_item_title",
+      "subtitle_style_id": "secondary_text"
+    },
+    {
+      "type": "label",
+      "id": "list_item_title",
+      "alignment": "leading",
+      "number_of_lines": 0,
+      "text_color": "#000000",
+      "text_font": {
+        "name": "Avenir-Medium",
+        "size": 17
+      }
+    },
+    {
+      "type": "label",
+      "id": "secondary_text",
+      "alignment": "leading",
+      "number_of_lines": 1,
+      "text_color": "#878883",
+      "text_font": {
+        "name": "Avenir",
+        "size": 16
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_extra_small",
+      "image_height": 16,
+      "image_width": 8,
+      "basic_props": {
+        "layout_margins": [0, 0, 0, 16]
+      }
+    },
+    {
+      "id": "horizontal_divider",
+      "type": "divider",
+      "height": 1,
+      "color": "#DDDDDD",
+      "basic_props": {
+        "layout_margins": [6, 79, 6, 0]
+      }
+    },
+    {
+      "id": "list_secondary_add_card",
+      "type": "basic_list_item",
+      "h_spacing": 0,
+      "title_subtitle_style_id": "title_subtitle_list_item",
+      "image_style_id": "add_image",
+      "basic_props": {
+        "background_color": "#ffffff",
+        "layout_margins": [16, 24, 0, 16]
+      }
+    },
+    {
+      "type": "image",
+      "id": "add_image",
+      "image_height": 24,
+      "image_width": 24,
+      "basic_props": {
+        "background_color": "#ffffff",
+        "layout_margins": [0,8,0,24]
+      }
+    }
+  ]
+}

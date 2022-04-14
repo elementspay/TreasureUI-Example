@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TreasureUIExample-TreasureUIExampleUITests/Pods-TreasureUIExample-TreasureUIExampleUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TreasureUI/Core/Treasure.framework/Treasure

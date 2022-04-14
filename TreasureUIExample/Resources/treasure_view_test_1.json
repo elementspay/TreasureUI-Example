@@ -1,0 +1,345 @@
+{
+  "screens": [
+    {
+      "id": "root",
+      "name": "root",
+      "screen_id": "root",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "payment_methods_display",
+                "top_padding": 12
+              },
+              {
+                "section_id": "payment_methods_display_1",
+                "top_padding": 12
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              
+            ]
+          },
+          "floating_footer": {
+            "section_details": [
+              
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "push_view_id",
+      "name": "push_view",
+      "screen_id": "push_view_id",
+      "layout": {
+        "compact": {
+          "type": "single_column",
+          "main": {
+            "section_details": [
+              {
+                "section_id": "payment_methods_display",
+                "top_padding": 12
+              },
+              {
+                "section_id": "payment_methods_display_1",
+                "top_padding": 12
+              }
+            ]
+          },
+          "nav": {
+            "section_details": [
+              
+            ]
+          },
+          "floating_footer": {
+            "section_details": [
+              
+            ]
+          }
+        }
+      }
+    },
+  ],
+  "sections" : [
+    {
+      "id": "list",
+      "section_id": "payment_methods_display",
+      "type": "general_list_content",
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "h_group_2",
+            "type": "h_group",
+            "style": "h_group_primary",
+            "items": [
+              {
+                "id": "image_2",
+                "type": "image",
+                "style": "image_secondary",
+                "accessibility_label": "3",
+                "image": {
+                  "type": "lottie_url",
+                  "value": "https://assets10.lottiefiles.com/packages/lf20_buratoqa.json"
+                }
+              },
+              {
+                "id": "v_group_1",
+                "type": "v_group",
+                "style": "v_group_primary",
+                "items": [
+                  {
+                    "id": "item_1",
+                    "type": "basic_list_item",
+                    "style": "list_group_primary",
+                    "title": "His exquisite sincerity education shameless ten earnestly breakfast add. So we me unknown as improve hastily sitting 123",
+                    "subtitle": "Backend driven UI"
+                  },
+                  {
+                    "id": "v_group_2",
+                    "type": "v_group",
+                    "style": "v_group_primary",
+                    "items": [
+                      {
+                        "id": "h_group_2",
+                        "type": "h_group",
+                        "style": "h_group_leading",
+                        "items": [
+                          {
+                            "id": "item_1",
+                            "type": "basic_list_item",
+                            "style": "list_primary",
+                            "title": "15",
+                            "subtitle": "Member "
+                          },
+                          {
+                            "id": "item_2",
+                            "type": "basic_list_item",
+                            "style": "list_primary",
+                            "title": "11",
+                            "subtitle": "Active"
+                          },
+                          {
+                            "id": "item_3",
+                            "type": "basic_list_item",
+                            "style": "list_primary",
+                            "title": "41",
+                            "subtitle": "123"
+                          },
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+            ],
+          },
+        ]
+      },
+    },
+    {
+      "id": "list_1",
+      "section_id": "payment_methods_display_1",
+      "type": "general_list_content",
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "image_1",
+            "type": "image",
+            "style": "image_primary",
+            "accessibility_label": "Lottie Image",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets6.lottiefiles.com/packages/lf20_yzoqyyqf.json"
+            }
+          },
+          {
+            "id": "item_1",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Visa 5674 123",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            }
+          },
+          {
+            "id": "divider_1",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "item_2",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Mastercard 9023",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            }
+          },
+          {
+            "id": "divider_2",
+            "type": "divider",
+            "style": "horizontal_divider",
+          },
+          {
+            "id": "item_3",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Paypal",
+            "subtitle": "marvin.zhan@gmail.com",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            }
+          },
+          {
+            "id": "divider_3",
+            "type": "divider",
+            "style": "horizontal_divider",
+          }
+        ]
+      },
+    },
+    {
+      "id": "list_2",
+      "section_id": "payment_methods_display_2",
+      "type": "general_list_content",
+      "section": {
+        "title": "Test if this works",
+        "items": [
+          {
+            "id": "item_11",
+            "type": "basic_list_item",
+            "style": "list_secondary",
+            "title": "Visa 5674 123",
+            "image": {
+              "type": "lottie_url",
+              "value": "https://assets5.lottiefiles.com/packages/lf20_fu0dfaqu.json"
+            },
+            "on_press_action": {
+              "type": "push_view",
+              "route": {
+                "screen_id": "push_view_id"
+              }
+            }
+          }
+        ]
+      },
+    }
+  ],
+  "styles": [
+    {
+      "type": "label",
+      "id": "primary_text",
+      "alignment": "leading",
+      "number_of_lines": 2,
+      "text_color": "#585956",
+      "font": {
+        "name": "Avenir-Medium",
+        "size": 20
+      }
+    },
+    {
+      "type": "label",
+      "id": "secondary_text",
+      "alignment": "leading",
+      "number_of_lines": 0,
+      "text_color": "#878883",
+      "font": {
+        "name": "Avenir",
+        "size": 12
+      }
+    },
+    {
+      "type": "image",
+      "id": "image_primary",
+      "height": 200,
+      "width": 200,
+      "corner_radius": 4
+    },
+    {
+      "type": "image",
+      "id": "image_secondary",
+      "height": 40,
+      "width": 40,
+      "corner_radius": 4
+    },
+    {
+      "id": "list_primary",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "v_space": 4,
+      "title_and_subtitle_style_id": "title_subtitle_primary",
+      "layout_margins": [0, 0, 0, 0]
+    },
+    {
+      "id": "list_secondary",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "h_space": 16,
+      "title_and_subtitle_style_id": "title_subtitle_primary",
+      "image_style_id": "image_secondary",
+      "layout_margins": [12, 16, 12, 16]
+    },
+    {
+      "id": "title_subtitle_primary",
+      "type": "title_and_subtitle",
+      "alignment": "leading",
+      "v_space": 0,
+      "title_style_id": "primary_text",
+      "subtitle_style_id": "secondary_text",
+    },
+    {
+      "id": "v_group_primary",
+      "type": "group",
+      "v_group_align": "leading",
+      "spacing": 8,
+      "layout_margins": [32, 12, 24, 32]
+    },
+    {
+      "id": "h_group_primary",
+      "type": "group",
+      "h_group_align": "fill",
+      "spacing": 16,
+      "layout_margins": [16, 12, 12, 16]
+    },
+    {
+      "id": "h_group_leading",
+      "type": "group",
+      "h_group_align": "top",
+      "spacing": 4
+    },
+    {
+      "id": "horizontal_divider",
+      "type": "divider",
+      "height": 1,
+      "layout_margins": [0, 24, 0, 24]
+    },
+    {
+      "id": "list_group_primary",
+      "type": "basic_list_item",
+      "h_group_align": "fill",
+      "v_space": 4,
+      "title_and_subtitle_style_id": "title_subtitle_primary",
+      "image_style_id": "image_secondary",
+      "layout_margins": [0, 0, 0, 0]
+    },
+    {
+      "id": "list_group_secondary",
+      "type": "basic_list_item",
+      "alignment": "leading",
+      "h_space": 16,
+      "title_and_subtitle_style_id": "title_subtitle_primary",
+      "image_style_id": "image_secondary",
+      "layout_margins": [12, 16, 12, 16]
+    },
+  ]
+}
