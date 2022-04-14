@@ -1,6 +1,0 @@
-framework module Pods_TreasureUIExample_TreasureUIExampleUITests {
-  umbrella header "Pods-TreasureUIExample-TreasureUIExampleUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
