@@ -16,6 +16,7 @@ build.xcarchive
 xcuserdata/
 TreasureUIExample.xcodeproj/xcuserdata/*
 TreasureUIExample.xcworkspace/*
+TreasureUIExample.xcworkspace/xcuserdata/*
 
 
 ## Other
